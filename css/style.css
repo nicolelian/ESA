@@ -8,6 +8,24 @@
 /* ==== Google font ==== */
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Montserrat:700|Merriweather:400italic');
 
+.footer{
+    height: 80px;
+    width: auto;
+    background-color: #666;
+}
+
+.img-footer{
+    float: left;
+    height: 50px;
+    width: auto;
+    margin: 15px;
+}
+
+.p-footer{
+     color: #fff; 
+     float: right; 
+     margin: 30px;
+}
 
 body {
     width: 100%;
