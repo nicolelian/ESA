@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<style>
+table {border-collapse: collapse;}
+th {border: 1px solid black;padding:5px;text-align:center;}
+td {border: 1px solid black;padding:5px;text-align:left;}
+</style>
+<head>
+<!-- Add a suitable title for this page -->
+<title>Product Family</title>
+<link rel="stylesheet" type="text/css" href="../stylesheet.css">
+</head>
+<body>
+<!-- What is the name of this folder? -->
+<h2>Modular Architecture</h2>
+
+<div class = "div-button">
+<a href="../img/Mod.png"><button class="button"><span>View File</span></button></a>
+</div>
+
+<table id="main-table" style="margin-top: 50px">
+<!-- Add header row -->
+
+<tr>
+	<th>Abstract modules</th>
+	<th>Functions</th>
+	<th>Message flow between modules</th>
+</tr>
+
+
+<tr>
+	<td style="font-weight: bold">Playermovement Module</td>
+	<td>It tracks the use of die and players’ movement.</td>
+	<td rowspan="8">
+		<ol>
+			<li>Players roll a die to move on the board.</li>
+			<li>The result from the board module will determine player’s next movement.</li>
+			<li>Reward submodule tells the player to move one more time.</li>
+			<li>Penalty submodule tells player to stop moving for one round.</li>
+			<li>The board module is based on knowledge module, as the “fun-shaped” board is made up of question cards.</li>
+			<li>The more tokens that are collected, the more knowledge our players are!</li>
+			<li>The result of player’s answer determines whether he receives reward or penalty.</li>
+			<li>These three submodules are implements of knowledge module for more varieties, which we may apply in the future. (shown in product family as well)</li>
+		</ol>
+</td>
+</tr>
+
+<tr>
+	<td style="font-weight: bold">Board Module</td>
+	<td>The board is made up of question cards. When players land on cards of different colors, they need to answer the question on the card.</td>
+</tr>
+
+<tr>
+	<td style="font-weight: bold">Reward Submodule</td>
+	<td>If player answers the question correctly, he can collect token from the square if there is one.</td>
+</tr>
+
+<tr>
+	<td style="font-weight: bold">Penalty Submodule</td>
+	<td>If player answers the question wrongly, he will lose one chance of rolling die.</td>
+</tr>
+
+<tr>
+	<td style="font-weight: bold">Knowledge Module</td>
+	<td>Knowledge module controls all the cards. We need a system to check the players’ answers whether they are correct. </td>
+</tr>
+
+<tr>
+	<td style="font-weight: bold">Country Submodule</td>
+	<td>The question cards are firstly about Singapore property market. We can add other countries’ in the future as well.</td>
+</tr>
+
+<tr>
+	<td style="font-weight: bold">Difficulty Submodule</td>
+	<td>The question cards can be divided into different difficulty levels.</td>
+</tr>
+
+<tr>
+	<td style="font-weight: bold">Subject Submodule</td>
+	<td>In the future we may expand the topic of question cards from Singapore property market to investment market. Other possible topics include <i>How to start a family</i>
+	</td>
+</tr>
+
+</table>
+
+<img src="../img/Mod.png">
+
+
+</body>
+</html>
